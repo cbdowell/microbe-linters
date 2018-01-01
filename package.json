@@ -1,18 +1,22 @@
 {
   "name": "microbe-linters",
   "version": "1.0.0",
+  "description": "Microbe Linters",
+  "repository": "cbdowell/microbe-linters",
+  "bugs": "https://github.com/cbdowell/microbe-linters/issues",
+  "homepage": "https://github.com/cbdowell/microbe-linters",
   "license": "MIT",
   "scripts": {
-      "push-changes": "node ./scripts/push-changes.js",
+    "push-changes": "node ./scripts/push-changes.js",
     "lint": "standard --fix 'src/**/*.js'",
     "precommit": "lint-staged"
   },
   "devDependencies": {
-      "dotenv": "^4.0.0",
-      "shelljs": "^0.7.8",
+    "dotenv": "^4.0.0",
+    "shelljs": "^0.7.8",
+    "husky": "^0.14.3",
     "babel-eslint": "^8.1.2",
     "coveralls": "^3.0.0",
-    "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
     "nyc": "^11.4.1",
     "standard": "^10.0.3"
