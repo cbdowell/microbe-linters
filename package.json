@@ -1,13 +1,15 @@
 {
   "name": "microbe-linters",
   "version": "1.0.0",
-  "main": "src/index.js",
   "license": "MIT",
   "scripts": {
+      "push-changes": "node ./scripts/push-changes.js",
     "lint": "standard --fix 'src/**/*.js'",
     "precommit": "lint-staged"
   },
   "devDependencies": {
+      "dotenv": "^4.0.0",
+      "shelljs": "^0.7.8",
     "babel-eslint": "^8.1.2",
     "coveralls": "^3.0.0",
     "husky": "^0.14.3",
