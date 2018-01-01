@@ -1,6 +1,28 @@
 {
   "name": "microbe-linters",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --fix 'src/**/*.js'",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "coveralls": "^3.0.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "nyc": "^11.4.1",
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "**/node_modules/**"
+    ]
+  },
+  "lint-staged": {
+    "*.js": "standard",
+    "src/*": "standard"
+  }
 }
