@@ -22,7 +22,6 @@
     ]
   },
   "lint-staged": {
-    "*.js": "standard",
-    "src/*": "standard"
+    "src/*.js": "standard"
   }
 }
